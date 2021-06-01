@@ -1,0 +1,101 @@
+/* Font Family */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3, a, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, .skills p, .side-drawer p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Font Weight */
+
+h1, h3, button {
+    font-weight: 600;
+}
+
+h2, a, .skills p, .side-drawer p {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+/* Font Size */
+
+h1 {
+    font-size: 28px;
+}
+
+h2, h3 {
+    font-size: 22px;
+}
+
+p, a, button, .side-drawer p {
+    font-size: 18px;
+}
+
+.skills p {
+    font-size: 16px;
+}
+
+/* Colors */
+
+h1, h2, h3, a, button, .side-drawer p {
+    color: #03414d;
+}
+
+p, .skills p, .burger-menu span {
+    color: #000;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+/* Illustrations */
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 322px;
+    height: auto;
+}
+
+/* Burger Menu */
+
+.burger-menu span {
+    display: block;
+    width: 36px;
+    margin-bottom: 7px;
+    border-bottom: solid #03414d 3px;
+}
+
+/* Icons */
+
+.photoshop {
+    width: 16px;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+/* Desktop Version */
+
+a:hover,
+.side-drawer p:hover,
+button:hover {
+    color: #022c34;
+}
+
+
+
