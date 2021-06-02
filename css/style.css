@@ -1,3 +1,7 @@
+body {
+    margin: 0 .5rem;
+}
+
 /* Font Family */
 
 h1 {
@@ -44,6 +48,16 @@ p, a, button, .side-drawer p {
     font-size: 16px;
 }
 
+/* Margin */
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
 /* Colors */
 
 h1, h2, h3, a, button, .side-drawer p {
@@ -76,7 +90,42 @@ img {
     height: auto;
 }
 
+/* Buttons */
+
+button {
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #D7F4F0;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #c3efe9;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
 /* Burger Menu */
+
+.burger-menu button {
+    padding: 1rem 0;
+    background: transparent;
+    text-align: left;
+}
+
+.burger-menu button:hover,
+.burger-menu button:focus {
+    background: transparent;
+}
 
 .burger-menu span {
     display: block;
@@ -84,6 +133,8 @@ img {
     margin-bottom: 7px;
     border-bottom: solid #03414d 3px;
 }
+
+/* Projects */
 
 /* Skills */
 
@@ -95,6 +146,10 @@ img {
 
 .closing-float {
     clear: both;
+}
+
+.skills p {
+    margin: .5rem 0 1rem 0;
 }
 
 /* Icons */
@@ -130,6 +185,29 @@ img {
 
 .figma {
     color: #323330;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    display: block;
+}
+
+.contact button {
+    text-decoration: none;
+    background: #D7F4F0;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.contact button:hover,
+.contact button:focus {
+    background: #c3efe9;
 }
 
 /* Desktop Version */
