@@ -18,7 +18,7 @@ p, .skills figcaption, .side-drawer {
 
 /* Font Weight */
 
-h1, h3, button {
+h1, h3, .button a {
     font-weight: 600;
 }
 
@@ -102,20 +102,13 @@ img {
 
 button {
     border: none;
-    padding: 1rem 2rem;
     margin: 1rem 0 0 0;
     text-decoration: none;
-    background: #D7F4F0;
     line-height: 1;
     cursor: pointer;
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
-}
-
-button:hover,
-button:focus {
-    background: #c3efe9;
 }
 
 button:active {
@@ -219,16 +212,18 @@ button:active {
     padding-left: .5rem;
 }
 
-.contact button {
+.contact .button {
     text-decoration: none;
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
     background: #D7F4F0;
     cursor: pointer;
     text-align: center;
     width: 100%;
 }
 
-.contact button:hover,
-.contact button:focus {
+.contact .button:hover,
+.contact .button:focus {
     background: #c3efe9;
 }
 
@@ -249,32 +244,32 @@ button:active {
 }
 
 .side-drawer ul {
-    margin-right: 45px;
-    margin-bottom: 45px;
-    padding-left: 20px;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 1.25rem;
 }
 
 .side-drawer li {
     border-bottom: 1px solid #E5E5E5;
     list-style: none;
-    padding-bottom: 12px;
-    padding-top: 16px;
+    padding-bottom: .7rem;
+    padding-top: 1rem;
     margin-left: 2rem;
 }
 
 .side-drawer .icon {
-    padding-right: 18px;
+    padding-right: 1.1rem;
 }
 
 .side-drawer a {
-    margin-left: -30px;
+    margin-left: -2rem;
 }
 
 .side-drawer .cross-icon {
     position: absolute;
-    top: 24px;
-    right: 24px;
-    font-size: 24px;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
 }
 
 /* Desktop Version */
