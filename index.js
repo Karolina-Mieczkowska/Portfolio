@@ -3,8 +3,7 @@ const burgerMenu = document.querySelector('.burger-menu button');
 const sideDrawer = document.querySelector('.side-drawer');
 const backDrop = document.querySelector('.backdrop');
 const crossIcon = document.querySelector('.cross-icon');
-const navLinks = document.querySelectorAll('.side-drawer li');
-const projectsActiveLink = document.querySelector('.active-projects-link')
+const navLinks = document.querySelectorAll('.nav-link');
 
 const activate = () => {
     sideDrawer.classList.add('active');
@@ -28,9 +27,21 @@ crossIcon.addEventListener('click', (event) => {
     deActivate();
 })
 
+navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', (event) => {
+        deActivate();
+    })
+})
+
 window.addEventListener("hashchange", function () {
-    window.scrollTo(window.scrollX, window.scrollY - 100);
+    if (location.hash === '#projects' || location.hash === '#about') {
+        window.scrollTo(window.scrollX, window.scrollY - 100);
+      } else {
+        window.scrollTo(window.scrollX, window.scrollY - 0);
+      }
 });
+
+
 
 
 
