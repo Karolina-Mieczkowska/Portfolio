@@ -41,6 +41,15 @@ window.addEventListener("hashchange", function () {
       }
 });
 
+const sectionWrapper = document.querySelector('.section-wrapper');
+const projectsSection = document.querySelector('.projects.desktop');
+
+let sectionWrapperHeight = sectionWrapper.clientHeight;
+
+projectsSection.style.height = sectionWrapperHeight + 'px';
+
+
+
 
 
 

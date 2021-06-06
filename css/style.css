@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.desktop-wrapper {
+    display: none;
+}
+
 body {
     margin: 0 .5rem;
 }
@@ -299,9 +307,44 @@ nav {
 
 /* Desktop Version */
 
-a:hover,
-button:hover {
-    color: #022c34;
+@media only screen and (min-width: 576px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+    nav,
+    .body-wrapper {
+        display: none;
+    }
+    .desktop-wrapper {
+        display: block;
+    }
+    a:hover,
+    button:hover {
+        color: #022c34;
+    }
+    .projects,
+    .section-wrapper {
+        float: left;
+        width: 50%;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-tile {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
 }
 
 
