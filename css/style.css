@@ -33,15 +33,15 @@ p {
 /* Font Size */
 
 h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 h2, h3 {
-    font-size: 22px;
+    font-size: 1.25rem;
 }
 
 p, a, button, .side-drawer {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .skills figcaption {
@@ -94,7 +94,7 @@ figure {
 }
 
 img {
-    width: 322px;
+    width: 20rem;
     height: auto;
 }
 
@@ -120,7 +120,7 @@ button:active {
 nav {
     position: fixed;
     top: 0;
-    left: 8px;
+    left: .5rem;
     z-index: 1;
     width: 100%;
     background: #fff;
