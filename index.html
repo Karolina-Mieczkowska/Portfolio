@@ -7,7 +7,7 @@
     <title>Karolina Mieczkowska | Portfolio</title>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
@@ -39,13 +39,14 @@
         <div class="backdrop"></div>
     </nav>
     <div class="body-wrapper">
-        <header id="about">
+        <header id="about" class="about">
             <h1>Karolina Mieczkowska</h1>
             <h2>Front End Developer</h2>
             <figure class="rwd-mockup">
                 <img src="img/RWD-stroke.jpg" alt="Respponsive Web Design Mockup">
             </figure>
             <p>I am a novice self-taught programmer passionate about visual communication and problem-solving. I am ready to establish cooperation as a Front End Developer. </p>
+            <div class="closing-float"></div>
         </header>
         <main>
             <section class="projects" id="projects">
@@ -113,9 +114,11 @@
                 <div class="closing-float"></div>
             </section>
             <section class="contact" id="contact">
-                <a href="https://github.com/Karolina-Mieczkowska" target="blank">My GitHub</a>
-                <a href="https://www.linkedin.com/in/karolina-mieczkowska-07b135183/" target="blank">My LinkedIn</a>
-                <a href="data/CV-K.MIECZKOWSKA.pdf" download="cv-K.Mieczkowska">My CV<i class="far fa-file-pdf icon"></i></a>
+                <div class="anchor-tags">
+                    <a href="https://github.com/Karolina-Mieczkowska" target="blank">My GitHub</a>
+                    <a href="https://www.linkedin.com/in/karolina-mieczkowska-07b135183/" target="blank">My LinkedIn</a>
+                    <a href="data/CV-K.MIECZKOWSKA.pdf" download="cv-K.Mieczkowska">My CV<i class="far fa-file-pdf icon"></i></a>
+                </div>
                 <div class="button">
                     <script type="text/javascript">
                         document.write("<a href=\"mail" + "to:" + new Array("kmieczkowska75","gmail.com").join("@") + "\">" + "Contact me" + "</" + "a>");
@@ -200,13 +203,17 @@
         </section>
         <div class="closing-float"></div>
         <footer class="contact" id="contact">
-            <a href="https://github.com/Karolina-Mieczkowska" target="blank">My GitHub</a>
-            <a href="https://www.linkedin.com/in/karolina-mieczkowska-07b135183/" target="blank">My LinkedIn</a>
-            <a href="data/CV-K.MIECZKOWSKA.pdf" download="cv-K.Mieczkowska">My CV<i class="far fa-file-pdf icon"></i></a>
-            <div class="button">
-                <script type="text/javascript">
-                    document.write("<a href=\"mail" + "to:" + new Array("kmieczkowska75","gmail.com").join("@") + "\">" + "Contact me" + "</" + "a>");
-                </script>
+            <div class="anchor-tags">
+                <a href="https://github.com/Karolina-Mieczkowska" target="blank">My GitHub<i class="fab fa-github icon desktop-icon"></i></a>
+                <a href="https://www.linkedin.com/in/karolina-mieczkowska-07b135183/" target="blank">My LinkedIn<i class="fab fa-linkedin icon desktop-icon"></i></a>
+                <a href="data/CV-K.MIECZKOWSKA.pdf" download="cv-K.Mieczkowska">My CV<i class="far fa-file-pdf icon desktop-icon"></i></a>
+            </div>
+            <div class="button-wrapper">
+                <div class="button">
+                    <script type="text/javascript">
+                        document.write("<a href=\"mail" + "to:" + new Array("kmieczkowska75","gmail.com").join("@") + "\">" + "Contact me" + "</" + "a>");
+                    </script>
+                </div>
             </div>
         </footer>
     </div>
