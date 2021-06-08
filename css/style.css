@@ -20,13 +20,13 @@ h2, h3, a, button {
     font-family: 'Open Sans', sans-serif;
 }
 
-p, .skills figcaption, .side-drawer {
+p, .skills figcaption, .side-drawer, .subpage-section a {
     font-family: 'Roboto', sans-serif;
 }
 
 /* Font Weight */
 
-h1, h3, .button a {
+h1, h3, .button a, {
     font-weight: 600;
 }
 
@@ -101,7 +101,7 @@ figure {
     text-align: center;
 }
 
-img {
+img.front-page-img, .subpage-section img {
     width: 20rem;
     height: auto;
 }
@@ -327,7 +327,7 @@ nav {
         width: 85%;
         margin: 0 auto;
     }
-    img {
+    img.front-page-img {
         width: 18rem;
         height: auto;
     }
@@ -357,7 +357,7 @@ nav {
 
 @media only screen and (min-width: 768px) {
     nav,
-    .body-wrapper {
+    .hide-body-wrapper {
         display: none;
     }
     .desktop-wrapper {
@@ -374,7 +374,7 @@ nav {
     .button a:hover {
         color: #022c34;
     }
-    img {
+    img.front-page-img {
         width: 20rem;
         height: auto;
     }
@@ -477,6 +477,23 @@ nav {
     section:last-child {
         margin-bottom: 7rem;
     }
+}
+
+
+
+/* Subpage */
+
+/* .subpage-about h2 {
+    font-weight: 600;
+} */
+
+.subpage-section figure {
+    text-align: center;
+}
+
+.subpage-section a {
+    font-weight: 500;
+    background: #F3FFFE;
 }
 
 
