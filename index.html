@@ -219,5 +219,13 @@
     </div>
     
     <script src="index.js" type="text/JavaScript"></script>
+    <script>
+        const sectionWrapper = document.querySelector('.section-wrapper');
+        const projectsSection = document.querySelector('.projects.desktop');
+
+        let sectionWrapperHeight = sectionWrapper.clientHeight;
+
+        projectsSection.style.height = sectionWrapperHeight + 'px';
+    </script>
 </body>
 </html>

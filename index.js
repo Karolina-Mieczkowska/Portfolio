@@ -34,19 +34,14 @@ navLinks.forEach((navLink) => {
 })
 
 window.addEventListener("hashchange", function () {
-    if (location.hash === '#projects' || location.hash === '#about') {
-        window.scrollTo(window.scrollX, window.scrollY - 100);
-      } else {
+    if (location.hash === '#contact' || location.hash === '#skills') {
         window.scrollTo(window.scrollX, window.scrollY - 0);
+      } else {
+        window.scrollTo(window.scrollX, window.scrollY - 100);
       }
 });
 
-const sectionWrapper = document.querySelector('.section-wrapper');
-const projectsSection = document.querySelector('.projects.desktop');
 
-let sectionWrapperHeight = sectionWrapper.clientHeight;
-
-projectsSection.style.height = sectionWrapperHeight + 'px';
 
 
 
