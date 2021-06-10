@@ -13,61 +13,74 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="burger-menu">
-        <button type="button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="side-drawer">
-            <i class="far fa-times-circle cross-icon"></i>
+    <nav>
+        <div class="burger-menu">
+            <button type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="side-drawer">
+                <i class="far fa-times-circle cross-icon"></i>
+                <ul>
+                    <li class="nav-link">
+                        <a href="index.html"><i class="fas fa-chevron-left icon"></i></i>Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#faq-page"><i class="fas fa-chevron-down icon"></i></i>FAQ Page</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#online-shop"><i class="fas fa-chevron-down icon"></i></i>Online Shop</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#wireframe"><i class="fas fa-chevron-down icon"></i></i>Website Wireframe</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact"><i class="fas fa-chevron-down icon"></i></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="backdrop"></div>
+        </div>
+        <div class="projects-desktop-nav">
             <ul>
                 <li class="nav-link">
                     <a href="index.html"><i class="fas fa-chevron-left icon"></i></i>Home</a>
                 </li>
-                <li class="nav-link">
-                    <a href="#faq-page"><i class="fas fa-chevron-down icon"></i></i>FAQ Page</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#online-shop"><i class="fas fa-chevron-down icon"></i></i>Online Shop</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#wireframe"><i class="fas fa-chevron-down icon"></i></i>Website Wireframe</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#contact"><i class="fas fa-chevron-down icon"></i></i>Contact</a>
-                </li>
             </ul>
         </div>
-        <div class="backdrop"></div>
     </nav>
-    <div class="body-wrapper">
+    <div class="body-wrapper projects-body-wrapper">
         <header id="about" class="about subpage-about">
             <h1>Karolina Mieczkowska</h1>
             <h2>Projects</h2>
         </header>
-        <main>
+        <main class="projects-main">
             <section id="faq-page" class="subpage-section">
                 <figure>
                     <figcaption>
-                        <h3>FAQ Page</h3>
+                        <h3 class="mobile-title">FAQ Page</h3>
                     </figcaption>
                     <img src="img/Desktop-Accordion.jpg" alt="Desktop Screen Mockup">
                 </figure>
-                <p>Fully responsive language learning FAQ Page with smoothly animated accordion component, created with HTML, CSS and JavaScript only.</p>
+                <h3 class="desktop-title">FAQ Page</h3>
+                <p>Fully responsive language learning FAQ Page with a smoothly animated accordion component, created with HTML, CSS and JavaScript only.</p>
+                <div class="closing-float"></div>
                 <div class="projects-action-buttons">
                     <a href="https://github.com/Karolina-Mieczkowska/FAQ-Page" target="blank" class="code">View Code</a>
                     <a href="https://karolina-mieczkowska.github.io/FAQ-Page/" target="blank" class="demo">View Demo</a>
                 </div>
             </section>
-            <section id="online-shop" class="subpage-section">
+            <section id="online-shop" class="subpage-section tablet-right">
                 <figure>
                     <figcaption>
-                        <h3>Online-Shop</h3>
+                        <h3 class="mobile-title">Online-Shop</h3>
                     </figcaption>
                     <img src="img/Desktop-shop.jpg" alt="Desktop Screen Mockup">
                 </figure>
-                <p>Fully responsive E-commerce Website Wireframe with digital products, colorfull graphics and Material Google Icons. Created with Bootstrap framework.</p>
+                <h3 class="desktop-title">Online Shop</h3>
+                <p>Fully responsive E-commerce Website Wireframe with digital products, colourful graphics and Material Google Icons, Created with Bootstrap framework.</p>
+                <div class="closing-float"></div>
                 <div class="projects-action-buttons">
                     <a href="https://github.com/Karolina-Mieczkowska/Online-shop" target="blank" class="code">View Code</a>
                     <a href="https://karolina-mieczkowska.github.io/Online-shop/" target="blank" class="demo">View Demo</a>
@@ -76,17 +89,20 @@
             <section id="wireframe" class="subpage-section">
                 <figure>
                     <figcaption>
-                        <h3>Website Wireframe</h3>
+                        <h3 class="mobile-title">Website Wireframe</h3>
                     </figcaption>
                     <img src="img/Desktop-CSS.jpg" alt="Desktop Screen Mockup">
                 </figure>
+                <h3 class="desktop-title">Website Wireframe</h3>
                 <p>Fully responsive, pure HTML, CSS and JavaScript Website Wireframe with vector illustration, smoothly animated carousel and Font Awesome Icons.</p>
+                <div class="closing-float"></div>
                 <div class="projects-action-buttons">
                     <a href="https://github.com/Karolina-Mieczkowska/CSS-Wireframe" target="blank" class="code">View Code</a>
                     <a href="https://karolina-mieczkowska.github.io/CSS-Wireframe/" target="blank" class="demo">View Demo</a>
                 </div>
             </section>
-            <footer class="contact" id="contact">
+            <hr>
+            <footer class="contact subpage-contact" id="contact">
                 <div class="anchor-tags">
                     <a href="https://github.com/Karolina-Mieczkowska" target="blank">My GitHub<i class="fab fa-github icon desktop-icon"></i></a>
                     <a href="https://www.linkedin.com/in/karolina-mieczkowska-07b135183/" target="blank">My LinkedIn<i class="fab fa-linkedin icon desktop-icon"></i></a>

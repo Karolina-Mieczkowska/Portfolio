@@ -26,7 +26,7 @@ p, .skills figcaption, .side-drawer, .subpage-section a {
 
 /* Font Weight */
 
-h1, h3, .button a, {
+h1, h3, .button a {
     font-weight: 600;
 }
 
@@ -161,16 +161,8 @@ nav {
     border-bottom: solid #03414d 3px;
 }
 
-/* Projects */
-
-.projects figcaption {
-    position: absolute;
-    text-align: left;
-    line-height: 1;
-}
-
-.projects img {
-    margin-top: .5rem;
+.projects-desktop-nav {
+    display: none;
 }
 
 /* Skills */
@@ -313,10 +305,62 @@ nav {
     font-size: 1.5rem;
 }
 
+/* Projects */
+
+.projects figcaption {
+    position: absolute;
+    text-align: left;
+    line-height: 1;
+}
+
+.projects img {
+    margin-top: .5rem;
+}
+
+.subpage-section .desktop-title {
+    display: none;
+}
+.subpage-section {
+    margin-bottom: 3.5rem;
+}
+
+.subpage-section figure {
+    text-align: center;
+}
+
+.subpage-section figure,
+.subpage-section p {
+    margin-bottom: 2rem;
+}
+
+.subpage-section a {
+    font-weight: 500;
+    background: #F3FFFE;
+}
+
+.projects-action-buttons {
+    display: flex;
+}
+
+.projects-action-buttons .code,
+.projects-action-buttons .demo {
+    flex-basis: 50%;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.projects-action-buttons .code {
+    margin-right: 4px;
+}
+
+.projects-action-buttons .demo {
+    margin-left: 4px;
+}
+
 /* Desktop Version */
 
 @media only screen and (min-width: 576px) {
-    nav {
+    .burger-menu {
         padding-left: 2rem;
     }
     .body-wrapper {
@@ -335,8 +379,8 @@ nav {
         width: 85%;
         margin: 0 auto;
     }
-    img.front-page-img {
-        width: 18rem;
+    img.front-page-img, .subpage-section img {
+        width: 14rem;
         height: auto;
     }
     figure {
@@ -360,10 +404,35 @@ nav {
     section:last-child {
         margin-bottom: 2rem;
     }
+    /* Projects */
+    /* .body-wrapper.projects-body-wrapper {
+        width: 100%;
+    } */
+    main.projects-main {
+        width: 100%;
+    }
+    .subpage-section figure,
+    .subpage-section p {
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+    .subpage-section.tablet-right figure {
+        float: right;
+        text-align: right;
+    }
+
+    .subpage-section.tablet-right figcaption {
+        text-align: center;
+    }
+    /* .subpage-section p {
+        position: relative;
+        top: 30px;
+    } */
 }
 
 @media only screen and (min-width: 768px) {
-    nav,
+    .burger-menu,
     .hide-body-wrapper {
         display: none;
     }
@@ -381,7 +450,7 @@ nav {
     .button a:hover {
         color: #022c34;
     }
-    img.front-page-img {
+    img.front-page-img, .subpage-section img {
         width: 20rem;
         height: auto;
     }
@@ -435,6 +504,32 @@ nav {
     section:last-child {
         margin-bottom: 1.5rem;
     }
+    /* Projects */
+    .contact.subpage-contact {
+        padding-bottom: 3rem;
+    }
+    .contact.subpage-contact .button {
+        top: 3rem;
+    }
+    .contact.subpage-contact .anchor-tags {
+        padding-top: 4rem;
+    }
+    /* Projects */
+    .projects-desktop-nav {
+        display: block;
+    }
+    .projects-desktop-nav .icon {
+        padding-right: 1.1rem;
+    }
+    .projects-desktop-nav li {
+        list-style: none;
+    }
+    .subpage-section .mobile-title {
+        display: none;
+    }
+    .subpage-section .desktop-title {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -463,6 +558,22 @@ nav {
     section:last-child {
         margin-bottom: 5rem;
     }
+    /* Projects */
+    .contact.subpage-contact .button {
+        margin-right: 0;
+    }
+    .projects-action-buttons {
+        width: 50%;
+        position: relative;
+        left: 50%;
+    }
+    .subpage-section.tablet-right .projects-action-buttons {
+        left: 0;
+    }
+    .subpage-section figure,
+    .subpage-section p {
+        margin-bottom: 0;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -488,47 +599,7 @@ nav {
 
 
 
-/* Subpage */
 
-/* .subpage-about h2 {
-    font-weight: 600;
-} */
 
-.subpage-section {
-    margin-bottom: 3.5rem;
-}
-
-.subpage-section figure {
-    text-align: center;
-}
-
-.subpage-section figure,
-.subpage-section p {
-    margin-bottom: 2rem;
-}
-
-.subpage-section a {
-    font-weight: 500;
-    background: #F3FFFE;
-}
-
-.projects-action-buttons {
-    display: flex;
-}
-
-.projects-action-buttons .code,
-.projects-action-buttons .demo {
-    flex-basis: 50%;
-    text-align: center;
-    padding: .5rem 0;
-}
-
-.projects-action-buttons .code {
-    margin-right: 4px;
-}
-
-.projects-action-buttons .demo {
-    margin-left: 4px;
-}
 
 
