@@ -11,9 +11,31 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 78);
+            }
+        }
+
+        window.addEventListener("hashchange", function() {
+            if (location.hash === '#contact' || location.hash === '#wireframe') {
+                window.scrollTo(window.scrollX, window.scrollY - 0);
+            } else {
+                offsetAnchor();
+            }
+        });
+        
+    </script>
 </head>
 <body>
-    <nav>
+    <div type="button" class="scroll-up-button">
+        <i class="fas fa-arrow-circle-up icon"></i>
+        <p>Up</p>
+    </div>
+    <div class="ue-scroll btn-white arrow-black circle"></div>
+    <nav class="projects-nav">
         <div class="burger-menu">
             <button type="button">
                 <span></span>
@@ -51,10 +73,53 @@
         </div>
     </nav>
     <div class="body-wrapper projects-body-wrapper">
-        <header id="about" class="about subpage-about">
-            <h1>Karolina Mieczkowska</h1>
-            <h2>Projects</h2>
+        <header id="about" class="about subpage-about projects-page">
+            <h1>Karolina Mieczkowska | Projects</h1>
         </header>
+        <subnav class="subnav">
+            <ul class="subnav-list">
+                <li class="subnav-list-item">
+                    <figure>
+                        <figcaption>
+                            <h2>FAQ Page</h2>
+                        </figcaption>
+                        <img src="img/Desktop-Accordion.jpg" alt="Desktop Screen Mockup">
+                        <div class="subnav-links">
+                            <a href="https://github.com/Karolina-Mieczkowska/FAQ-Page" target="blank">View Code</a>
+                            <a href="https://karolina-mieczkowska.github.io/FAQ-Page/" target="blank">View Demo</a>
+                            <a href="#faq-page">View Description</a>
+                        </div>
+                    </figure> 
+                </li>
+                <li class="subnav-list-item">
+                    <figure>
+                        <figcaption>
+                            <h2>Online Shop</h2>
+                        </figcaption>
+                        <img src="img/Desktop-shop.jpg" alt="Desktop Screen Mockup">
+                        <div class="subnav-links">
+                            <a href="https://github.com/Karolina-Mieczkowska/Online-shop" target="blank">View Code</a>
+                            <a href="https://karolina-mieczkowska.github.io/Online-shop/" target="blank">View Demo</a>
+                            <a href="#online-shop">View Description</a>
+                        </div>
+                    </figure> 
+                </li>
+                <li class="subnav-list-item">
+                    <figure>
+                        <figcaption>
+                            <h2>Website Wireframe</h2>
+                        </figcaption>
+                        <img src="img/Desktop-CSS.jpg" alt="Desktop Screen Mockup">
+                        <div class="subnav-links">
+                            <a href="https://github.com/Karolina-Mieczkowska/CSS-Wireframe" target="blank">View Code</a>
+                            <a href="https://karolina-mieczkowska.github.io/CSS-Wireframe/" target="blank">View Demo</a>
+                            <a href="#wireframe">View Description</a>
+                        </div>
+                    </figure> 
+                </li>
+            </ul>
+            <section class="nav-section"></section>
+        </subnav>
         <main class="projects-main">
             <section id="faq-page" class="subpage-section">
                 <figure>

@@ -307,6 +307,10 @@ nav {
 
 /* Projects */
 
+.scroll-up-button {
+    display: none;
+}
+
 .projects figcaption {
     position: absolute;
     text-align: left;
@@ -357,6 +361,10 @@ nav {
     margin-left: 4px;
 }
 
+.subnav {
+    display: none;
+}
+
 /* Desktop Version */
 
 @media only screen and (min-width: 576px) {
@@ -405,9 +413,6 @@ nav {
         margin-bottom: 2rem;
     }
     /* Projects */
-    /* .body-wrapper.projects-body-wrapper {
-        width: 100%;
-    } */
     main.projects-main {
         width: 100%;
     }
@@ -421,14 +426,9 @@ nav {
         float: right;
         text-align: right;
     }
-
     .subpage-section.tablet-right figcaption {
         text-align: center;
     }
-    /* .subpage-section p {
-        position: relative;
-        top: 30px;
-    } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -505,6 +505,52 @@ nav {
         margin-bottom: 1.5rem;
     }
     /* Projects */
+    .scroll-up-button {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        padding: 1rem;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .scroll-up-button:hover {
+        transform: scale(1.1);
+    }
+    .scroll-up-button .icon {
+        font-size: 3rem;
+    }
+    .scroll-up-button p {
+        margin: .5rem 0 0 0;
+        font-weight: 600;
+        
+    }
+    .onscroll-active {
+        overflow: inherit;
+        visibility: inherit;
+        height: auto;
+        width: auto;
+    }
+    .projects-desktop-nav .icon {
+        padding-right: 1.1rem;
+    }
+    .projects-desktop-nav ul {
+        padding-left: 0;
+    }
+    .projects-desktop-nav li {
+        list-style: none;
+    }
+    .projects-nav {
+        position: relative;
+    }
+    .projects-body-wrapper {
+        top: 0;
+    }
     .contact.subpage-contact {
         padding-bottom: 3rem;
     }
@@ -514,15 +560,8 @@ nav {
     .contact.subpage-contact .anchor-tags {
         padding-top: 4rem;
     }
-    /* Projects */
     .projects-desktop-nav {
         display: block;
-    }
-    .projects-desktop-nav .icon {
-        padding-right: 1.1rem;
-    }
-    .projects-desktop-nav li {
-        list-style: none;
     }
     .subpage-section .mobile-title {
         display: none;
@@ -535,6 +574,9 @@ nav {
 @media only screen and (min-width: 992px) {
     .desktop-wrapper {
         margin: 0 0 0 2rem;
+    }
+    main.projects-main {
+        width: 90%;
     }
     .section-wrapper {
         position: relative;
@@ -559,6 +601,9 @@ nav {
         margin-bottom: 5rem;
     }
     /* Projects */
+    .subpage-about.projects-page {
+        margin-bottom: 5rem;
+    }
     .contact.subpage-contact .button {
         margin-right: 0;
     }
@@ -567,6 +612,9 @@ nav {
         position: relative;
         left: 50%;
     }
+    .subpage-section {
+        margin-bottom: 4.5rem;
+    }
     .subpage-section.tablet-right .projects-action-buttons {
         left: 0;
     }
@@ -574,9 +622,45 @@ nav {
     .subpage-section p {
         margin-bottom: 0;
     }
+    .subnav {
+        display: block;
+    }
+    .subnav-list {
+        display: flex;
+        list-style: none;
+    }
+    .subnav-list-item {
+        flex-basis: 33%;
+    }
+    .subnav h2 {
+        font-weight: 600;
+    }
+    .subnav img {
+        width: 15rem;
+        height: auto;
+    }
+    .subnav h2,
+    .subnav img {
+        margin-bottom: .8rem;
+    }
+    .subnav-links {
+        text-align: left;
+    }
+    .subnav-list-item a {
+        display: block;
+        font-size: 1rem;
+        padding-left: 20%;
+        line-height: 1.4;
+    }
+    .subnav-list-item a:hover {
+        transform: scale(1.015);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+    main.projects-main {
+        width: 70%;
+    }
     h1 {
         font-size: 3rem;
     }
@@ -594,6 +678,17 @@ nav {
     }
     section:last-child {
         margin-bottom: 7rem;
+    }
+    /* Projects */
+    .subnav-list-item a {
+        padding-left: 24%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* Projects */
+    .subnav-list-item a {
+        padding-left: 28%;
     }
 }
 

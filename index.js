@@ -33,13 +33,34 @@ navLinks.forEach((navLink) => {
     })
 })
 
-window.addEventListener("hashchange", function () {
-    if (location.hash === '#contact' || location.hash === '#skills') {
-        window.scrollTo(window.scrollX, window.scrollY - 0);
-      } else {
-        window.scrollTo(window.scrollX, window.scrollY - 100);
-      }
-});
+
+// projects
+
+const scrollUpButton = document.querySelector('.scroll-up-button');
+
+window.onscroll = () => {
+    let currentScrollPos = window.pageYOffset;
+    (currentScrollPos > 20) ? 
+        scrollUpButton.classList.add('onscroll-active') : scrollUpButton.classList.remove('onscroll-active')
+}
+
+scrollUpButton.addEventListener('click', () => {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+})
+
+var anchor = document.querySelector('#wireframe');
+
+        setTimeout(function () {
+            anchor.scrollIntoView();
+            window.scrollBy(0, -100);
+        }, 3000);
+
+
+
+
+
+
 
 
 
