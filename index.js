@@ -34,29 +34,30 @@ navLinks.forEach((navLink) => {
 })
 
 
-// projects
-
-const scrollUpButton = document.querySelector('.scroll-up-button');
-
-window.onscroll = () => {
-    let currentScrollPos = window.pageYOffset;
-    (currentScrollPos > 20) ? 
-        scrollUpButton.classList.add('onscroll-active') : scrollUpButton.classList.remove('onscroll-active')
-}
-
-scrollUpButton.addEventListener('click', () => {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0; 
+navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', (event) => {
+        let destination;
+        if(navLink.classList.contains('about')) {
+            destination = document.querySelector('#about');
+        } else if (navLink.classList.contains('projects')) {
+            destination = document.querySelector('#projects');
+        } else if (navLink.classList.contains('faq-page')) {
+            destination = document.querySelector('#faq-page');
+        } else if (navLink.classList.contains('online-shop')) {
+            destination = document.querySelector('#online-shop');
+        } else if (navLink.classList.contains('wireframe')) {
+            destination = document.querySelector('#wireframe');
+        } 
+        ScrollIntoAbove(destination)
+    })
 })
 
-var anchor = document.querySelector('#wireframe');
-
-        setTimeout(function () {
-            anchor.scrollIntoView();
-            window.scrollBy(0, -100);
-        }, 3000);
-
-
+const ScrollIntoAbove = (el) => {
+    setTimeout(() => {
+        el.scrollIntoView();
+        window.scrollBy(0, -100)
+    }, 1);
+};
 
 
 

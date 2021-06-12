@@ -11,26 +11,9 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-
-        function offsetAnchor() {
-            if(location.hash.length !== 0) {
-                window.scrollTo(window.scrollX, window.scrollY - 78);
-            }
-        }
-
-        window.addEventListener("hashchange", function() {
-            if (location.hash === '#contact' || location.hash === '#wireframe') {
-                window.scrollTo(window.scrollX, window.scrollY - 0);
-            } else {
-                offsetAnchor();
-            }
-        });
-        
-    </script>
 </head>
 <body>
-    <div type="button" class="scroll-up-button">
+    <div class="scroll-up-button">
         <i class="fas fa-arrow-circle-up icon"></i>
         <p>Up</p>
     </div>
@@ -48,13 +31,13 @@
                     <li class="nav-link">
                         <a href="index.html"><i class="fas fa-chevron-left icon"></i></i>Home</a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav-link faq-page">
                         <a href="#faq-page"><i class="fas fa-chevron-down icon"></i></i>FAQ Page</a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav-link online-shop">
                         <a href="#online-shop"><i class="fas fa-chevron-down icon"></i></i>Online Shop</a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav-link wireframe">
                         <a href="#wireframe"><i class="fas fa-chevron-down icon"></i></i>Website Wireframe</a>
                     </li>
                     <li class="nav-link">
@@ -87,7 +70,7 @@
                         <div class="subnav-links">
                             <a href="https://github.com/Karolina-Mieczkowska/FAQ-Page" target="blank">View Code</a>
                             <a href="https://karolina-mieczkowska.github.io/FAQ-Page/" target="blank">View Demo</a>
-                            <a href="#faq-page">View Description</a>
+                            <a href="#faq-page" class="faq-page">View Description</a>
                         </div>
                     </figure> 
                 </li>
@@ -100,7 +83,7 @@
                         <div class="subnav-links">
                             <a href="https://github.com/Karolina-Mieczkowska/Online-shop" target="blank">View Code</a>
                             <a href="https://karolina-mieczkowska.github.io/Online-shop/" target="blank">View Demo</a>
-                            <a href="#online-shop">View Description</a>
+                            <a href="#online-shop" class="online-shop">View Description</a>
                         </div>
                     </figure> 
                 </li>
@@ -184,5 +167,37 @@
         </main>
     </div>
     <script src="index.js" type="text/JavaScript"></script>
+    <script>
+
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 78);
+            }
+        }
+
+        window.addEventListener("hashchange", function() {
+            if (location.hash === '#contact' || location.hash === '#wireframe') {
+                 window.scrollTo(window.scrollX, window.scrollY - 0);
+            } else {
+                offsetAnchor();
+           }
+        });
+
+        const scrollUpButton = document.querySelector('.scroll-up-button');
+
+        window.onscroll = () => {
+            let currentScrollPos = window.pageYOffset;
+            (currentScrollPos > 20) ? 
+            scrollUpButton.classList.add('onscroll-active') : scrollUpButton.classList.remove('onscroll-active')
+        }
+
+        scrollUpButton.addEventListener('click', (event) => {
+        document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        })
+
+        
+        
+    </script>
 </body>
 </html>

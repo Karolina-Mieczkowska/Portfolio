@@ -11,21 +11,6 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        function offsetAnchor() {
-            if(location.hash.length !== 0) {
-                window.scrollTo(window.scrollX, window.scrollY - 100);
-            }
-        }
-
-        window.addEventListener("hashchange", function() {
-            if (location.hash === '#contact' || location.hash === '#skills') {
-                window.scrollTo(window.scrollX, window.scrollY - 0);
-            } else {
-                offsetAnchor();
-            }
-        });
-    </script>
 </head>
 <body>
     <nav class="burger-menu">
@@ -37,10 +22,10 @@
         <div class="side-drawer">
             <i class="far fa-times-circle cross-icon"></i>
             <ul>
-                <li class="nav-link">
+                <li class="nav-link about">
                     <a href="#about"><i class="fas fa-cube icon"></i>About</a>
                 </li>
-                <li class="nav-link">
+                <li class="nav-link projects">
                     <a href="#projects"><i class="fas fa-paper-plane icon"></i>Projects</a>
                 </li>
                 <li class="nav-link">
