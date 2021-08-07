@@ -568,6 +568,7 @@ nav {
     }
     .subpage-section .desktop-title {
         display: block;
+        margin-bottom: 0;
     }
 }
 
@@ -626,11 +627,10 @@ nav {
         display: block;
     }
     .subnav-list {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 3rem;
         list-style: none;
-    }
-    .subnav-list-item {
-        flex-basis: 33%;
     }
     .subnav h2 {
         font-weight: 600;
