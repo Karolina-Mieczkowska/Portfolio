@@ -377,7 +377,7 @@ nav {
     }
     .about figure,
     .about p {
-        float: right;
+        /* float: right; */
         width: 50%;
     }
     .about p {
@@ -432,14 +432,18 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
-    .burger-menu,
-    .hide-body-wrapper {
+    .rwd-mockup,
+    .burger-menu {
         display: none;
     }
-    .desktop-wrapper {
+    .index-main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /* .desktop-wrapper {
         display: block;
         margin: 3rem 2rem;
-    }
+    }  */
     a {
         font-weight: 600;
     }
@@ -460,11 +464,10 @@ nav {
     .about p {
         padding-right: 0;
     }
-    .projects,
     .section-wrapper {
-        float: left;
+        /* float: left; */
         width: 50%;
-    }
+    } 
     .projects {
         display: flex;
         flex-direction: column;
