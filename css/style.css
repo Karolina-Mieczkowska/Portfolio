@@ -439,6 +439,15 @@ nav {
     .index-main {
         display: flex;
         flex-direction: row-reverse;
+        width: 100%;
+    }
+    .skills,
+    .projects {
+        flex-basis: 50%;
+    }
+    .projects figure {
+        position: relative;
+        top: -50%;
     }
     /* .desktop-wrapper {
         display: block;
