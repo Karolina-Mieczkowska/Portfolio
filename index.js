@@ -41,6 +41,16 @@ navLinks.forEach((navLink) => {
             destination = document.querySelector('#about');
         } else if (navLink.classList.contains('projects')) {
             destination = document.querySelector('#projects');
+        } else if (navLink.classList.contains('coffee-app')) {
+            destination = document.querySelector('#coffee-app');
+        } else if (navLink.classList.contains('finance-sc')) {
+            destination = document.querySelector('#finance-sc');
+        } else if (navLink.classList.contains('note-app')) {
+            destination = document.querySelector('#note-app');
+        } else if (navLink.classList.contains('smoothie-bar')) {
+            destination = document.querySelector('#smoothie-bar');
+        } else if (navLink.classList.contains('finance-app')) {
+            destination = document.querySelector('#finance-app');
         } else if (navLink.classList.contains('faq-page')) {
             destination = document.querySelector('#faq-page');
         } else if (navLink.classList.contains('online-shop')) {

@@ -38,8 +38,11 @@
                     <li class="nav-link">
                         <a href="index.html"><i class="fas fa-chevron-left icon"></i></i>Home</a>
                     </li>
-                    <li class="nav-link finance-app-2.0">
-                        <a href="#finance-app-2.0"><i class="fas fa-chevron-down icon"></i></i>Finance App 2.0</a>
+                    <li class="nav-link coffee-app">
+                        <a href="#coffee-app"><i class="fas fa-chevron-down icon"></i></i>Coffee App</a>
+                    </li>
+                    <li class="nav-link finance-sc">
+                        <a href="#finance-sc"><i class="fas fa-chevron-down icon"></i></i>Finance App 2.0</a>
                     </li>
                     <li class="nav-link note-app">
                         <a href="#note-app"><i class="fas fa-chevron-down icon"></i></i>Note-taking App</a>
@@ -80,6 +83,19 @@
         </header>
         <subnav class="subnav">
             <ul class="subnav-list">
+                <li class="subnav-list-item subnav-list-item--coffee-app">
+                    <figure>
+                        <figcaption>
+                            <h2>Coffee App</h2>
+                        </figcaption>
+                        <img src="img/Desktop-Coffee.jpg" alt="Desktop Screen Mockup">
+                        <div class="subnav-links">
+                            <a href="https://github.com/Karolina-Mieczkowska/Coffee-App" target="blank">View Code</a>
+                            <a href="https://karolina-mieczkowska.github.io/Coffee-App/" target="blank">View Demo</a>
+                            <a href="#coffee-app" class="faq-page">View Description</a>
+                        </div>
+                    </figure> 
+                </li>
                 <li class="subnav-list-item subnav-list-item--finance-2.0">
                     <figure>
                         <figcaption>
@@ -89,7 +105,7 @@
                         <div class="subnav-links">
                             <a href="https://github.com/Karolina-Mieczkowska/Finance-App-2.0" target="blank">View Code</a>
                             <a href="https://karolina-mieczkowska.github.io/Finance-App-2.0/" target="blank">View Demo</a>
-                            <a href="#finance-app-2.0" class="faq-page">View Description</a>
+                            <a href="#finance-sc" class="faq-page">View Description</a>
                         </div>
                     </figure> 
                 </li>
@@ -175,7 +191,22 @@
             <section class="nav-section"></section>
         </subnav>
         <main class="projects-main">
-            <section id="finance-app-2.0" class="subpage-section">
+            <section id="coffee-app" class="subpage-section tablet-right">
+                <figure>
+                    <figcaption>
+                        <h3 class="mobile-title">Coffee App</h3>
+                    </figcaption>
+                    <img src="img/Desktop-Coffee.jpg" alt="Desktop Screen Mockup">
+                </figure>
+                <h3 class="desktop-title">Coffee App</h3>
+                <p>This is my second attempt at to Order&Pay App with minimalistic design and cleaner code. Created with HTML, CSS and JavaScript, enriched by Bootstrap Icons.</p>
+                <div class="closing-float"></div>
+                <div class="projects-action-buttons">
+                    <a href="https://github.com/Karolina-Mieczkowska/Coffee-App" target="blank" class="code">View Code</a>
+                    <a href="https://karolina-mieczkowska.github.io/Coffee-App/" target="blank" class="demo">View Demo</a>
+                </div>
+            </section>
+            <section id="finance-sc" class="subpage-section">
                 <figure>
                     <figcaption>
                         <h3 class="mobile-title">Finance App 2.0</h3>
@@ -306,13 +337,13 @@
             }
         }
 
-        window.addEventListener("hashchange", function() {
-            if (location.hash === '#contact' || location.hash === '#wireframe') {
-                 window.scrollTo(window.scrollX, window.scrollY - 0);
-            } else {
-                offsetAnchor();
-           }
-        });
+        // window.addEventListener("hashchange", function() {
+        //     if (location.hash === '#contact' || location.hash === '#wireframe') {
+        //          window.scrollTo(window.scrollX, window.scrollY - 0);
+        //     } else {
+        //         offsetAnchor();
+        //    }
+        // });
 
         const scrollUpButton = document.querySelector('.scroll-up-button');
 

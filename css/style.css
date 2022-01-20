@@ -575,6 +575,9 @@ nav {
     .projects-desktop-nav {
         display: block;
     }
+    .subpage-section {
+        padding-top: 2rem;
+    }
     .subpage-section .mobile-title {
         display: none;
     }
