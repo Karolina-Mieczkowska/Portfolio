@@ -41,6 +41,8 @@ navLinks.forEach((navLink) => {
             destination = document.querySelector('#about');
         } else if (navLink.classList.contains('projects')) {
             destination = document.querySelector('#projects');
+        } else if (navLink.classList.contains('js-calendar')) {
+            destination = document.querySelector('#js-calendar');
         } else if (navLink.classList.contains('coloring-book')) {
             destination = document.querySelector('#coloring-book');
         } else if (navLink.classList.contains('coffee-app')) {
